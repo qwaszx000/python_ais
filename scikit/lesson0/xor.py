@@ -8,13 +8,7 @@ xs = np.array([
     1, 1
 ]).reshape(4, 2)#2 входа
 
-#xs = np.append(xs, [[1, 1]])
-#xs = xs.reshape(4, 2)
-
 ys = np.array([0, 1, 1, 0]).reshape(4,)#1 выход
-#add_l(1, 1, 0)
-#print(xs)
-#print(ys)
 
 nn = sklearn.neural_network.MLPClassifier(
     activation="relu", max_iter=99999999, hidden_layer_sizes=(4,2))#2 скрытых слоя 
